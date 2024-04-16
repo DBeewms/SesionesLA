@@ -7,13 +7,6 @@ int main(int argc, char const *argv[])
 
     printf("Sumare 10 numeros...\n");
 
-    /*while(counter <= 9)
-    {
-        printf("Dime un numero para sumarlo: ");
-        scanf("%f", numbers[counter]);
-        counter += 1;
-    }*/
-
     for(int i = 0; i < 9; i++)
     {
         printf("Dime un numero para sumarlo: ");
