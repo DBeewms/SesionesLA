@@ -2,19 +2,30 @@
 
 int main(int argc, char const *argv[])
 {
-    char numbers[5];
+    double numbers[10];
+    double sum = 0;
 
-    numbers[0] = 'a';
-    numbers[1] = 'e';
-    numbers[2] = 'i';
-    numbers[3] = 'o';
-    numbers[4] = 'u';
+    printf("Sumare 10 numeros...\n");
 
-    printf("El elemento #1 del arreglo es %c\n", numbers[0]);
-    printf("El elemento #2 del arreglo es %c\n", numbers[1]);
-    printf("El elemento #3 del arreglo es %c\n", numbers[2]);
-    printf("El elemento #4 del arreglo es %c\n", numbers[3]);
-    printf("El elemento #5 del arreglo es %c\n", numbers[4]);
+    /*while(counter <= 9)
+    {
+        printf("Dime un numero para sumarlo: ");
+        scanf("%f", numbers[counter]);
+        counter += 1;
+    }*/
+
+    for(int i = 0; i < 9; i++)
+    {
+        printf("Dime un numero para sumarlo: ");
+        scanf("%f", numbers[i]);
+    }
+    
+    for(int i = 0; i < 9; i++)
+    {
+        sum += numbers[i];
+    }
+
+   printf("La sumatoria es: %.2f", sum);
 
     return 0;
 }
